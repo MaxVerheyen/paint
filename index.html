@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pokémon Drawing App</title>
+        <link rel="stylesheet" href="draw.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="draw.js"></script>
+    </head>
+    <body>
+        <div class="top-bar">
+            <button id="save-btn">Save</button>
+            <button id="undo-btn">Undo</button>
+            <button id="clear-btn">Clear</button>
+            <p>Pokémon:</p>
+            <select id="pokemon-slct">
+                <option value="0">Pikachu</option>
+                <option value="1">Bulbasaur</option>
+                <option value="2">Charmander</option>
+                <option value="3">Squirtle</option>
+            </select>
+            <button id="pokemon-btn">Draw Pokémon</button>
+            <p>Background:</p>
+            <input type="color" id="background-color-picker" value="#FFFFFF">
+            <p>Tools:</p>
+            <button id="color-btn">Pippet</button>
+            <button id="erase-btn">Erase</button>
+            <input type="range" id="brush-size" min="1" max="100" value="1">
+            <input type="color" id="color-picker">
+            <p>LocalStorage:</p>
+            <button id="store-btn">store</button>
+            <!--<button id="retrieve-btn">Retrieve</button>-->
+        </div>
+        <canvas id="draw"></canvas>
+        <div id="circle"></div>
+    </body>
+</html>
